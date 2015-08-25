@@ -23,12 +23,13 @@ private SoundPool mySound;
         mp = MediaPlayer.create(this, R.raw.four);
         mp.start();
     }
-
     public void toword4(View view) { Integer[] integers = NumberRandomiser.getRandomNumbers();
         Intent intent = new Intent(getApplicationContext(), NumberRandomiser.class);
         intent.putExtra("number",integers[0]);
         startActivity(intent);
     }
+
+
     public void slimz(View v) {
         mySound.play(redaudioId, 1, 1, 1, 0, 1);  }
 }
