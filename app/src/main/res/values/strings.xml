@@ -1,8 +1,9 @@
 <resources>
-    <string name="app_name">BrainBoosters</string>
+    <string name="app_name">Conglemerate</string>
 
         <string name="Learn">Learn</string>
         <string name="Numbers">Numbers</string>
+
         <string name="hello_world">Hello world!</string>
         <string name="action_settings">Settings</string>
         <string name="title_activity_numbers1">numbers1</string>
@@ -54,6 +55,9 @@
     <string name="title_activity_ex7">ex7</string>
     <string name="title_activity_ex8">ex8</string>
     <string name="title_activity_ex1">ex1</string>
+    <string name="title_activity_frown">frown</string>
+    <string name="title_activity_smile">smile</string>
+    <string name="title_activity_show_me_one">Show_me_one</string>
 
 
 </resources>
