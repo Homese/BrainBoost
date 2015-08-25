@@ -23,7 +23,6 @@ private Toast toast;
         toast.setGravity(Gravity.CENTER, 0, 0);
         toast.show();
     }
-
     public void to2(View view) {
         Intent intent = new Intent(getApplicationContext(),number2.class);
         startActivity(intent);
