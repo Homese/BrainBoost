@@ -34,5 +34,6 @@ public class ex1 extends Activity {
         startActivity(intent);
     }
     public void lunz(View view) {
+        mySound.play(ferId, 1, 1, 1, 0, 1);
     }
 }

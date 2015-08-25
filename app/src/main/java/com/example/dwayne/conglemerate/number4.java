@@ -11,14 +11,14 @@ import android.view.View;
 
 public class number4 extends Activity {
 private SoundPool mySound;
-    int redaudioId;
+    int fourId;
     private MediaPlayer mp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_number4);
         mySound = new SoundPool(10, AudioManager.STREAM_MUSIC,0);
-        redaudioId = mySound.load(this,R.raw.four,1);
+        fourId = mySound.load(this,R.raw.four,1);
         setVolumeControlStream(AudioManager.STREAM_MUSIC);
         mp = MediaPlayer.create(this, R.raw.four);
         mp.start();
@@ -28,5 +28,5 @@ private SoundPool mySound;
         startActivity(intent);
     }
     public void slimz(View v) {
-        mySound.play(redaudioId, 1, 1, 1, 0, 1);  }
+        mySound.play(fourId, 1, 1, 1, 0, 1);  }
 }
