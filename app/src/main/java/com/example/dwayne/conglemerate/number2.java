@@ -13,6 +13,7 @@ public class number2 extends AppCompatActivity {
 
     private SoundPool mySound;
     int twoId;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,7 +21,6 @@ public class number2 extends AppCompatActivity {
         mySound = new SoundPool(10, AudioManager.STREAM_MUSIC,0);
         twoId = mySound.load(this,R.raw.two,1);
     }
-
     public void twoloud(View view) {
         Intent intent = new Intent(getApplicationContext(),Show_me_one.class);
         startActivity(intent);
