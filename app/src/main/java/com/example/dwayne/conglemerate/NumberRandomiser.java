@@ -17,9 +17,11 @@ public class NumberRandomiser {
                     randomNumbers.add(nextNum);
                     System.out.println(nextNum);
                 }
+
                 if (randomNumbers.size() > 9)
                     hasTenNumbers = true;
             }
+
             Integer[] array = new Integer[randomNumbers.size()];
             randomNumbers.toArray(array);
             return array;
