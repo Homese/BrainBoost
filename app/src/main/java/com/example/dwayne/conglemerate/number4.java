@@ -23,7 +23,7 @@ private SoundPool mySound;
         mp = MediaPlayer.create(this, R.raw.four);
         mp.start();
     }
-    public void toword4(View view) {
+    public void toword(View view) {
         Intent intent = new Intent(getApplicationContext(), ex1.class);
         startActivity(intent);
     }
