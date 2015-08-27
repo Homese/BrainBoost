@@ -23,8 +23,8 @@
         android:textSize="194sp"
         android:textColor="#000000"
         android:background="#FFFF30"
-        android:onClick="rested"
-        android:id="@+id/button"
+
+        android:id="@+id/rightbutton"
         android:layout_marginTop="128dp"
         android:layout_alignParentTop="true"
         android:layout_toStartOf="@+id/imageButton2" />
@@ -35,11 +35,11 @@
         android:text="1"
         android:textSize="194sp"
         android:textColor="#000000"
-        android:onClick="wrongchoice"
-        android:id="@+id/button2"
+
+        android:id="@+id/wrongbutton"
         android:background="#FFFF30"
-        android:layout_alignTop="@+id/button"
-        android:layout_toEndOf="@+id/imageButton2"/>
+        android:layout_alignTop="@+id/rightbutton"
+        android:layout_toEndOf="@+id/imageButton2" />
 
     <ImageButton
         android:layout_width="wrap_content"

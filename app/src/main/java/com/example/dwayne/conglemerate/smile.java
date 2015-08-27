@@ -1,19 +1,14 @@
 package com.example.dwayne.conglemerate;
 
-import android.content.Intent;
-import android.media.MediaActionSound;
-import android.media.MediaPlayer;
-import android.media.SoundPool;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.view.Gravity;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
-import android.widget.Toast;
+        import android.content.Intent;
+        import android.support.v7.app.AppCompatActivity;
+        import android.os.Bundle;
+        import android.view.Gravity;
+        import android.view.View;
+        import android.widget.Toast;
 
 public class smile extends AppCompatActivity {
-private Toast toast;
+    private Toast toast;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,8 +17,8 @@ private Toast toast;
         Toast.makeText(getApplicationContext(), "Click here!", Toast.LENGTH_SHORT);
         toast.setGravity(Gravity.CENTER, 0, 0);
         toast.show();
-
     }
+
     public void to2(View view) {
         Intent intent = new Intent(getApplicationContext(),number2.class);
         startActivity(intent);

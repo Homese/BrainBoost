@@ -15,7 +15,7 @@
         android:layout_height="440dp"
         android:text="4"
         android:textSize="172sp"
-        android:onClick="toword"
+
         android:background="#FFFF30"
         android:padding="1dp"
         android:textColor="#000000"
@@ -32,6 +32,4 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:padding="1dp"/>
-
-
 </RelativeLayout>

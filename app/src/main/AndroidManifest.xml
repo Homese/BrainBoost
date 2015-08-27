@@ -14,6 +14,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -38,7 +39,7 @@
             android:label="@string/title_activity_smile" >
         </activity>
         <activity
-            android:name=".Show_me_one"
+            android:name=".ShowMeOne"
             android:label="@string/title_activity_show_me_one" >
         </activity>
     </application>
