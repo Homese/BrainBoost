@@ -7,41 +7,25 @@
         android:hardwareAccelerated="true"
         android:icon="@mipmap/bb_pic"
         android:label="@string/app_name"
-        android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        android:theme="@style/Theme.AppCompat.Light" >
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".number4"
-            android:label="@string/title_activity_number4" >
+   <activity android:name=".Numbers"
+             android:label="@string/title_activity_numbers">
+
+   </activity>
+        <activity android:name="Exercises"
+            android:label="@string/title_activity_Exercises">
+
         </activity>
-        <activity
-            android:name=".ex1"
-            android:label="@string/title_activity_ex1" >
-        </activity>
-        <activity
-            android:name=".number2"
-            android:label="@string/title_activity_number2" >
-        </activity>
-        <activity
-            android:name=".frown"
-            android:label="@string/title_activity_frown" >
-        </activity>
-        <activity
-            android:name=".smile"
-            android:label="@string/title_activity_smile" >
-        </activity>
-        <activity
-            android:name=".ShowMeOne"
-            android:label="@string/title_activity_show_me_one" >
-        </activity>
+
     </application>
 
 </manifest>

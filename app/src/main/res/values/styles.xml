@@ -1,7 +1,7 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+    <style name="AppTheme"  parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
 
         name="button" android:parent="@android:style/button">
@@ -17,5 +17,4 @@
         <item name="android:focusable">true</item>
         <item name="android:clickable">true</item>
     </style>
-
 </resources>
