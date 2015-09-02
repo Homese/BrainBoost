@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     }
 public void results(View v){
     FragmentManager fragmentManager = getSupportFragmentManager();
-    Fragment fragmentA = new Numbers();
+    Fragment fragmentA = new Smile();
     fragmentManager.beginTransaction()
             .replace(R.id.mainContent, fragmentA)
             .addToBackStack(null)
@@ -28,7 +28,7 @@ public void results(View v){
 }
     public void wrongchoice(View v){
         FragmentManager fragmentManager = getSupportFragmentManager();
-        Fragment fragmentA = new Numbers();
+        Fragment fragmentA = new Frown();
         fragmentManager.beginTransaction()
                 .replace(R.id.mainContent, fragmentA)
                 .addToBackStack(null)
