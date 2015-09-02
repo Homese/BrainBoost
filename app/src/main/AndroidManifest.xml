@@ -13,19 +13,21 @@
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-   <activity android:name=".Numbers"
-             android:label="@string/title_activity_numbers">
 
-   </activity>
-        <activity android:name="Exercises"
-            android:label="@string/title_activity_Exercises">
 
+        <activity
+            android:name=".Smile"
+            android:label="@string/title_activity_smile" >
         </activity>
-
+        <activity
+            android:name=".Frown"
+            android:label="@string/title_activity_frown" >
+        </activity>
     </application>
 
 </manifest>
