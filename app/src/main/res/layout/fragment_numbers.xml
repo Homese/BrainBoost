@@ -7,5 +7,13 @@
     android:padding="1dp">
     <!-- TODO: Update blank fragment layout -->
 
+<Button
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:text="8"
+    android:textSize="193sp"
+    android:background="#FFFF30"/>
+
+
 
 </FrameLayout>

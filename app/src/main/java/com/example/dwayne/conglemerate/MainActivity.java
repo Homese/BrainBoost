@@ -41,6 +41,5 @@ public void results(View v){
                 .replace(R.id.mainContent, fragmentA)
                 .addToBackStack(null)
                 .commit();
-
     }
 }

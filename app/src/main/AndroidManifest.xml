@@ -20,14 +20,6 @@
         </activity>
 
 
-        <activity
-            android:name=".Smile"
-            android:label="@string/title_activity_smile" >
-        </activity>
-        <activity
-            android:name=".Frown"
-            android:label="@string/title_activity_frown" >
-        </activity>
     </application>
 
 </manifest>
