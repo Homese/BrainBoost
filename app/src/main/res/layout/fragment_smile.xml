@@ -7,13 +7,12 @@
     android:id="@+id/correct">
 
     <!-- TODO: Update blank fragment layout -->
-<ImageView
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:src="@drawable/welldone_470"
-    />
-    <Button
+
+    <ImageButton
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:background="@android:color/transparent"/>
+        android:src="@drawable/welldone_470"
+        android:onClick="results"
+        android:background="#FFFF30"
+        android:padding="1dp"/>
 </FrameLayout>

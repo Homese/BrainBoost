@@ -28,17 +28,18 @@ public void results(View v){
     FragmentManager fragmentManager = getSupportFragmentManager();
     Fragment fragmentB = new Smile();
     fragmentManager.beginTransaction()
-            .replace(R.id.btnseven, fragmentB)
+            .replace(R.id.exml, fragmentB)
             .addToBackStack(null)
             .commit();
  }
-    public void click(View v) {
+    public void click(View v){
         FragmentManager fragmentManager = getSupportFragmentManager();
         Fragment fragmentA = new Exercises();
         fragmentManager.beginTransaction()
                 .replace(R.id.mainContent, fragmentA)
                 .addToBackStack(null)
                 .commit();
+
     }
 }
 
