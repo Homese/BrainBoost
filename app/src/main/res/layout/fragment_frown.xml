@@ -1,13 +1,17 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" tools:context="com.example.dwayne.conglemerate.Frown">
+    android:layout_height="match_parent"
+    android:id="@+id/wrongs"
+    tools:context="com.example.dwayne.conglemerate.Frown">
 
     <!-- TODO: Update blank fragment layout -->
     <ImageButton
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
+        android:onClick="backbtn"
         android:src="@drawable/incorrect_470"
         android:id="@+id/wrong"
-        android:padding="1dp"/>
+        android:padding="1dp"
+        android:background="#FFFF30"/>
 
 </FrameLayout>

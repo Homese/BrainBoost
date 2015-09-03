@@ -17,13 +17,20 @@ public class MainActivity extends AppCompatActivity {
     }
     public void greenbtn(View v){
         FragmentManager fragmentManager = getSupportFragmentManager();
-        Fragment fragmentC = new Frown();
+        Fragment fragmentC = new Celebration();
         fragmentManager.beginTransaction()
                 .replace(R.id.correct, fragmentC)
                 .addToBackStack(null)
                 .commit();
     }
-
+public void backbtn(View v){
+    FragmentManager fragmentManager = getSupportFragmentManager();
+    Fragment fragmentD = new Exercises();
+    fragmentManager.beginTransaction()
+            .replace(R.id.wrongs,fragmentD)
+            .addToBackStack(null)
+            .commit();
+}
 public void results(View v){
     FragmentManager fragmentManager = getSupportFragmentManager();
     Fragment fragmentB = new Smile();
@@ -41,6 +48,7 @@ public void results(View v){
                 .commit();
 
     }
+
 }
 
 
