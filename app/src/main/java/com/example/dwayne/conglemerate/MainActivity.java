@@ -1,14 +1,11 @@
 package com.example.dwayne.conglemerate;
 
-import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,23 +15,24 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
     }
-public void results(View v){
-    FragmentManager fragmentManager = getSupportFragmentManager();
-    Fragment fragmentA = new Smile();
-    fragmentManager.beginTransaction()
-            .replace(R.id.mainContent, fragmentA)
-            .addToBackStack(null)
-            .commit();
-}
-    public void wrongchoice(View v){
+    public void greenbtn(View v){
         FragmentManager fragmentManager = getSupportFragmentManager();
-        Fragment fragmentA = new Frown();
+        Fragment fragmentC = new Frown();
         fragmentManager.beginTransaction()
-                .replace(R.id.mainContent, fragmentA)
+                .replace(R.id.correct, fragmentC)
                 .addToBackStack(null)
                 .commit();
     }
-    public void click(View view) {
+
+public void results(View v){
+    FragmentManager fragmentManager = getSupportFragmentManager();
+    Fragment fragmentB = new Smile();
+    fragmentManager.beginTransaction()
+            .replace(R.id.btnseven, fragmentB)
+            .addToBackStack(null)
+            .commit();
+ }
+    public void click(View v) {
         FragmentManager fragmentManager = getSupportFragmentManager();
         Fragment fragmentA = new Exercises();
         fragmentManager.beginTransaction()
@@ -43,3 +41,7 @@ public void results(View v){
                 .commit();
     }
 }
+
+
+
+

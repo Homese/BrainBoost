@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    tools:context="com.example.dwayne.conglemerate.Smile">
+    tools:context="com.example.dwayne.conglemerate.Smile"
+    android:id="@+id/correct">
 
     <!-- TODO: Update blank fragment layout -->
 <ImageView
@@ -14,6 +15,5 @@
     <Button
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:id="@+id/correct"
         android:background="@android:color/transparent"/>
 </FrameLayout>
