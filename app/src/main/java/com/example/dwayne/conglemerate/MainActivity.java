@@ -12,8 +12,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_main);
+
     } public void click(View v){
         FragmentManager fragmentManager = getSupportFragmentManager();
         Fragment fragmentA = new Exercises();
@@ -21,8 +21,8 @@ public class MainActivity extends AppCompatActivity {
                 .replace(R.id.mainContent, fragmentA)
                 .addToBackStack(null)
                 .commit();
-
     }
+
     public void results(View v){
         FragmentManager fragmentManager = getSupportFragmentManager();
         Fragment fragmentB = new Smile();
@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
                 .addToBackStack(null)
                 .commit();
     }
+
     public void btnend(View v){
         FragmentManager fragmentManager = getSupportFragmentManager();
         Fragment fragmentE = new Celebration();
@@ -41,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+
     public void redbtn(View v){
         FragmentManager fragmentManager = getSupportFragmentManager();
         Fragment fragmentC = new Frown();
@@ -48,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
                 .replace(R.id.exml, fragmentC)
                 .addToBackStack(null)
                 .commit();
+
     }
 
 public void backbtn(View view){
@@ -58,6 +61,7 @@ public void backbtn(View view){
             .addToBackStack(null)
             .commit();
 }
+
 }
 
 
