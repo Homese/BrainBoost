@@ -3,6 +3,8 @@ package com.example.dwayne.conglemerate;
 
 
 import android.content.Context;
+import android.media.AudioManager;
+import android.media.MediaPlayer;
 import android.net.Uri;
 import android.provider.MediaStore;
 import android.support.v4.app.Fragment;
@@ -20,18 +22,27 @@ public class Celebration extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         //Inflate the layout for this fragment
+
         return inflater.inflate(R.layout.fragment_celebration, container, false);
 
+        MediaPlayer mediaPlayer = new MediaPlayer();
+        mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
+
+        mediaPlayer.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+
+            @Override
+            public void onPrepared(MediaPlayer mp) {
+                mp.start();
+            }
+        });
+        Context context;
+        mediaPlayer.prepareAsync();mediaPlayer = MediaPlayer.create(context, R.raw.movie4_converted);
+        mediaPlayer.setLooping(true);
+        mediaPlayer.start();
     }
-
-
-
-
-
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
-
 }
+
