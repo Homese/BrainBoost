@@ -4,7 +4,8 @@
     android:layout_height="match_parent"
     tools:context="com.example.dwayne.conglemerate.Numbers"
     android:background="#FFFF30"
-    android:padding="1dp">
+    android:padding="1dp"
+    android:id="@+id/eight">
     <!-- TODO: Update blank fragment layout -->
 
 <Button
@@ -12,7 +13,8 @@
     android:layout_height="fill_parent"
     android:text="8"
     android:textSize="193sp"
-    android:background="#FFFF30"/>
+    android:background="#FFFF30"
+    android:onClick="btnnumber"/>
 
 
 

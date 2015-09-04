@@ -16,9 +16,17 @@ public class MainActivity extends AppCompatActivity {
 
     } public void click(View v){
         FragmentManager fragmentManager = getSupportFragmentManager();
-        Fragment fragmentA = new Exercises();
+        Fragment fragmentA = new Numbers();
         fragmentManager.beginTransaction()
                 .replace(R.id.mainContent, fragmentA)
+                .addToBackStack(null)
+                .commit();
+    }
+    public void btnnumber(View v){
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        Fragment fragmentF = new  Exercises();
+        fragmentManager.beginTransaction()
+                .replace(R.id.eight,fragmentF)
                 .addToBackStack(null)
                 .commit();
     }
@@ -31,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
                 .addToBackStack(null)
                 .commit();
     }
-
     public void btnend(View v){
         FragmentManager fragmentManager = getSupportFragmentManager();
         Fragment fragmentE = new Celebration();
@@ -40,9 +47,6 @@ public class MainActivity extends AppCompatActivity {
                 .addToBackStack(null)
                 .commit();
     }
-
-
-
     public void redbtn(View v){
         FragmentManager fragmentManager = getSupportFragmentManager();
         Fragment fragmentC = new Frown();
@@ -60,10 +64,7 @@ public void backbtn(View view){
             .replace(R.id.frown,fragmentD)
             .addToBackStack(null)
             .commit();
-}
 
 }
 
-
-
-
+}
