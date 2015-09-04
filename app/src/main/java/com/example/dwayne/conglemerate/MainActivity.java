@@ -39,11 +39,11 @@ public class MainActivity extends AppCompatActivity {
                 .addToBackStack(null)
                 .commit();
     }
-    public void btnend(View v){
+    public void btncele(View v){
         FragmentManager fragmentManager = getSupportFragmentManager();
         Fragment fragmentE = new Celebration();
         fragmentManager.beginTransaction()
-                .replace(R.id.correct,fragmentE)
+                .replace(R.id.greenfce,fragmentE)
                 .addToBackStack(null)
                 .commit();
     }
@@ -54,9 +54,7 @@ public class MainActivity extends AppCompatActivity {
                 .replace(R.id.exml, fragmentC)
                 .addToBackStack(null)
                 .commit();
-
     }
-
 public void backbtn(View view){
     FragmentManager fragmentManager = getSupportFragmentManager();
     Fragment fragmentD = new Exercises();
