@@ -25,20 +25,8 @@ public class Celebration extends Fragment {
 
         return inflater.inflate(R.layout.fragment_celebration, container, false);
 
-        MediaPlayer mediaPlayer = new MediaPlayer();
-        mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
 
-        mediaPlayer.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
 
-            @Override
-            public void onPrepared(MediaPlayer mp) {
-                mp.start();
-            }
-        });
-        Context context;
-        mediaPlayer.prepareAsync();mediaPlayer = MediaPlayer.create(context, R.raw.movie4_converted);
-        mediaPlayer.setLooping(true);
-        mediaPlayer.start();
     }
     @Override
     public void onCreate(Bundle savedInstanceState) {
