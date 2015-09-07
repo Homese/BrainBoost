@@ -4,9 +4,7 @@
     android:layout_height="match_parent"
     tools:context="com.example.dwayne.conglemerate.Exercises"
     android:background="#FFFF30"
-    android:id="@+id/exml"
-    >
-    <!-- TODO: Update blank fragment layout -->
+    android:id="@+id/exml">
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

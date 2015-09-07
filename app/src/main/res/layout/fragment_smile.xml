@@ -11,7 +11,7 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:src="@drawable/welldone_470"
-        android:onClick="btncele"
+        android:onClick="btn_celebration"
         android:background="@android:color/transparent"
         android:padding="1dp"/>
 

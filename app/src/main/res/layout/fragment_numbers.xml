@@ -6,7 +6,6 @@
     android:background="#FFFF30"
     android:padding="1dp"
     android:id="@+id/eight">
-    <!-- TODO: Update blank fragment layout -->
 
 <Button
     android:layout_width="fill_parent"

@@ -42,12 +42,11 @@ public class MainActivity extends AppCompatActivity {
                 .addToBackStack(null)
                 .commit();
     }
-
-    public void btncele(View v){
+    public void btn_celebration(View v){
         FragmentManager fragmentManager = getSupportFragmentManager();
         Fragment fragmentE = new Celebration();
         fragmentManager.beginTransaction()
-                .replace(R.id.mainContent,fragmentE)
+                .replace(R.id.mainContent, fragmentE)
                 .addToBackStack(null)
                 .commit();
     }
@@ -60,15 +59,14 @@ public class MainActivity extends AppCompatActivity {
                 .addToBackStack(null)
                 .commit();
     }
+public void backbtn(View view){
+    FragmentManager fragmentManager = getSupportFragmentManager();
+    Fragment fragmentD = new Exercises();
+    fragmentManager.beginTransaction()
+            .replace(R.id.mainContent,fragmentD)
+            .addToBackStack(null)
+            .commit();
 
-    public void backbtn(View view){
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        Fragment fragmentD = new Exercises();
-        fragmentManager.beginTransaction()
-                .replace(R.id.mainContent,fragmentD)
-                .addToBackStack(null)
-                .commit();
-
-    }
+}
 
 }
