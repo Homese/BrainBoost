@@ -25,26 +25,19 @@ public class Celebration extends Fragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
         getActivity().getWindow().setFormat(PixelFormat.TRANSLUCENT);
-
         final RelativeLayout relativeLayout = (RelativeLayout) view.findViewById(R.id.videoViewContainer);
-
         final VideoView videoView = (VideoView) relativeLayout.findViewById(R.id.videoView);
-
         Uri videoUri = Uri.parse("android.resource://" + getActivity().getPackageName() + "/" + R.raw.iceb);
         videoView.setVideoURI(videoUri);
-
         videoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
             @Override
             public void onPrepared(MediaPlayer mp) {
                 mp.setLooping(true);
             }
         });
-
         videoView.start();
     }
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
