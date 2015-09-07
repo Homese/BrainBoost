@@ -1,8 +1,7 @@
-/app/src/main/java/com/example/dwayne/conglemerate/Numbers.java
 .gradle
-/local.properties
-/.idea/workspace.xml
-/.idea/libraries
+local.properties
+.idea
 .DS_Store
 /build
-/captures
+.gradle
+*.iml
