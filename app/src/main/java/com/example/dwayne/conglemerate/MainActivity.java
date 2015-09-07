@@ -14,7 +14,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-    } public void click(View v){
+    }
+
+    public void click(View v){
         FragmentManager fragmentManager = getSupportFragmentManager();
         Fragment fragmentA = new Numbers();
         fragmentManager.beginTransaction()
@@ -22,11 +24,12 @@ public class MainActivity extends AppCompatActivity {
                 .addToBackStack(null)
                 .commit();
     }
+
     public void btnnumber(View v){
         FragmentManager fragmentManager = getSupportFragmentManager();
         Fragment fragmentF = new  Exercises();
         fragmentManager.beginTransaction()
-                .replace(R.id.eight,fragmentF)
+                .replace(R.id.mainContent,fragmentF)
                 .addToBackStack(null)
                 .commit();
     }
@@ -35,15 +38,15 @@ public class MainActivity extends AppCompatActivity {
         FragmentManager fragmentManager = getSupportFragmentManager();
         Fragment fragmentB = new Smile();
         fragmentManager.beginTransaction()
-                .replace(R.id.exml, fragmentB)
+                .replace(R.id.mainContent, fragmentB)
                 .addToBackStack(null)
                 .commit();
     }
-    public void btncele(View v){
+    public void btn_celebration(View v){
         FragmentManager fragmentManager = getSupportFragmentManager();
         Fragment fragmentE = new Celebration();
         fragmentManager.beginTransaction()
-                .replace(R.id.greenfce,fragmentE)
+                .replace(R.id.mainContent, fragmentE)
                 .addToBackStack(null)
                 .commit();
     }
@@ -51,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         FragmentManager fragmentManager = getSupportFragmentManager();
         Fragment fragmentC = new Frown();
         fragmentManager.beginTransaction()
-                .replace(R.id.exml, fragmentC)
+                .replace(R.id.mainContent, fragmentC)
                 .addToBackStack(null)
                 .commit();
     }
@@ -59,7 +62,7 @@ public void backbtn(View view){
     FragmentManager fragmentManager = getSupportFragmentManager();
     Fragment fragmentD = new Exercises();
     fragmentManager.beginTransaction()
-            .replace(R.id.frown,fragmentD)
+            .replace(R.id.mainContent,fragmentD)
             .addToBackStack(null)
             .commit();
 

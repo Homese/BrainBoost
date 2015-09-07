@@ -1,18 +1,14 @@
 package com.example.dwayne.conglemerate;
 
-
-
-import android.content.Context;
-import android.media.AudioManager;
+import android.graphics.PixelFormat;
 import android.media.MediaPlayer;
 import android.net.Uri;
-import android.provider.MediaStore;
-import android.support.v4.app.Fragment;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.MediaController;
+import android.widget.RelativeLayout;
 import android.widget.VideoView;
 
 
@@ -24,10 +20,31 @@ public class Celebration extends Fragment {
         //Inflate the layout for this fragment
 
         return inflater.inflate(R.layout.fragment_celebration, container, false);
-
-
-
     }
+
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        getActivity().getWindow().setFormat(PixelFormat.TRANSLUCENT);
+
+        final RelativeLayout relativeLayout = (RelativeLayout) view.findViewById(R.id.videoViewContainer);
+
+        final VideoView videoView = (VideoView) relativeLayout.findViewById(R.id.videoView);
+
+        Uri videoUri = Uri.parse("android.resource://" + getActivity().getPackageName() + "/" + R.raw.iceb);
+        videoView.setVideoURI(videoUri);
+
+        videoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+            @Override
+            public void onPrepared(MediaPlayer mp) {
+                mp.setLooping(true);
+            }
+        });
+
+        videoView.start();
+    }
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
